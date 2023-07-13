@@ -1,0 +1,64 @@
+body {
+    color: #000;
+    font-family: 'TTHoves','NanumSquare',sans-serif;
+    font-size: 14px;
+    padding-top: 64px;
+}
+
+body.active {
+    overflow: hidden;
+}
+
+.blind {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    margin: -1px;
+    clip: rect(0 0 0 0);
+}
+
+.group-menu, .inner {
+    min-width: 1200px;
+    margin: 0 auto;
+    padding: 0 104px 0 98px;
+}
+
+.search-area, .team-box, .group-people, .group-benefits, .board-box {
+    max-width: 1408px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 104px;
+    box-sizing: border-box;
+}
+
+.container {
+    overflow: hidden;
+}
+
+.btn-box {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 44px;
+}
+.btn-box .btn-arrow {
+    width: 33px;
+    height: 32px;
+}
+.btn-box .btn-arrow.prev {
+    background-position: -187px -172px;
+}
+.btn-box .btn-arrow.next {
+    background-position: -113px -172px;
+    margin-left: 8px;
+}
+
+/* 공부 */
+.btn-box .btn-arrow.swiper-button-disabled {}
+
+
+/* 이미지 */
+.header .group-menu .logo {
+    background: url(../images/sp_pc.png) no-repeat;
+}
+/* 이미지 */

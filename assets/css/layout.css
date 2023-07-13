@@ -1,0 +1,234 @@
+@import url(./font.css);
+@import url(./reset.css);
+@import url(./common.css);
+
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+    z-index: 99;
+}
+.header::after {
+    content: '';
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 182px;
+    display: none;
+    background-color: rgba(255, 255, 255, 0.98);
+}
+.header.hover::after {
+    display: block;
+}
+.header .group-menu {
+    display: flex;
+    max-width: 1920px;
+    height: 64px;
+    align-items: center;
+    box-sizing: border-box;
+}
+.header .logo a {
+    display: block;
+    width: 223px;
+    height: 35px;
+    background-position: -105px 0px;
+}
+
+.header .gnb {
+    display: flex;
+    flex: 1;
+    margin-left: 29px;
+    height: 100%;
+    justify-content: space-between;
+}
+.header .menu-list {
+    height: 100%;
+    display: flex;
+}
+.header .menu-item {
+    padding: 0 10px;
+    font-size: 17px;
+    letter-spacing: -0.36px;
+    display: flex;
+    align-items: center;
+}
+.gnb a {
+    position: relative;
+}
+.gnb a::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #000;
+    display: none;
+}
+.gnb a:hover::after {
+    display: block;
+}
+.gnb .link-util:last-child:hover::after {
+    display: none;
+}
+
+.menu-item .sub-list {
+    display: none;
+    position: absolute;
+    top: 64px;
+    padding: 15px 0;
+    z-index: 9;
+}
+.menu-item .sub-list.active {
+    display: block;
+}
+.menu-item .sub-list .sub-item {
+    padding: 0 13px;
+    font-size: 17px;
+    line-height: 32px;
+    letter-spacing: -0.36px;
+}
+
+.header .util {
+    display: flex;
+    align-items: center;
+}
+.header .util a {
+    padding: 0 10px;
+    font-size: 17px;
+}
+
+.header .util .link-util .link-language {
+    display: none;
+    position: absolute;
+    top: 26px;
+    left: 0;
+    background-color: #fff;
+    box-sizing: border-box;
+    z-index: 10;
+    padding: 0 10px;
+    line-height: 32px;
+    letter-spacing: -0.36px;
+}
+
+.header .util .link-util .ic-arrowdown {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 3px;
+    background-position: -122px -93px;
+    width: 10px;
+    height: 6px;
+}
+
+.header .util .link-util:last-child.open .link-language {
+    display: block;
+}
+
+.header .util .link-util:last-child.open .ic-arrowdown {
+    transform: rotate(180deg);
+}
+
+.header .btn-menu {
+    display: none;
+}
+
+/* footer */
+
+.footer {
+    background-color: #f2f2f2;
+}
+.footer .inner {
+    padding: 25px 104px 25px 98px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer .logo {
+    display: inline-block;
+}
+.footer .logo a {
+    display: inline-block;
+    font-size: 18px;
+    letter-spacing: -0.32px;
+}
+
+.footer .policy {
+    font-size: 14px;
+    letter-spacing: -0.28px;
+    color: #909090;
+    margin-left: 30px;
+    margin-right: auto;
+}
+
+.footer .footer-site {
+    position: relative;
+}
+.footer .footer-site .button {
+    position: relative;
+    width: 280px;
+    line-height: 42px;
+    text-align: left;
+    background-color: #f2f2f2;
+    font-family: 'TTHoves','NanumSquare',sans-serif;
+}
+.footer .footer-site.active .button {
+    background: #fff;
+    padding: 0 12px;
+}
+
+.footer .footer-site .button::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #000;
+}
+.footer .footer-site .button::after {
+    content: '';
+    background-position: -122px -93px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 6px;
+    z-index: 9;
+}
+.footer .footer-site.active .button::after {
+    transform: rotate(180deg);
+    right: 5px;
+}
+
+.footer .footer-site .site-list {
+    display: none;
+    position: absolute;
+    bottom: 43px;
+    background: #fff;
+    z-index: 9;
+    width: 100%;
+}
+.footer .footer-site.active .site-list {
+    display: block;
+}
+.footer .footer-site .site-list.on {
+    display: block;
+}
+
+.footer .footer-site .site-item {
+    font-size: 18px;
+    padding: 0 12px;
+    line-height: 42px;
+}
+.footer .footer-site .site-item a {
+    display: block;
+}
+.footer .footer-site .site-item:hover {
+    background-color: #f2f2f2;
+}
+
+/* footer */
