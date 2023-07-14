@@ -24,7 +24,7 @@ body.active {
     padding: 0 104px 0 98px;
 }
 
-.search-area, .team-box, .group-people, .group-benefits, .board-box {
+.group-search, .team-box, .group-people, .group-benefits, .board-box {
     max-width: 1408px;
     width: 100%;
     margin: 0 auto;
@@ -58,7 +58,8 @@ body.active {
 
 
 /* 이미지 */
-.header .group-menu .logo {
+.header .group-menu .logo a {
     background: url(../images/sp_pc.png) no-repeat;
+    background-size: 328px 205px;
 }
 /* 이미지 */

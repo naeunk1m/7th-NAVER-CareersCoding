@@ -30,7 +30,7 @@
     align-items: center;
     box-sizing: border-box;
 }
-.header .logo a {
+.header .group-menu .logo a {
     display: block;
     width: 223px;
     height: 35px;

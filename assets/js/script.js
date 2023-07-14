@@ -32,7 +32,7 @@ $(function(){
           loop:true,
     });
 
-    var midslide = new Swiper(".con-slide", {
+    var midslide = new Swiper(".swiper.con-slide", {
         slidesPerView: 1,
         spaceBetween: 30,
         navigation: {
@@ -61,5 +61,15 @@ $(function(){
           },
     });
 
+    
+    $('.sc-search select').change(function(e){
+        e.preventDefault();
+        $(this).css('color','#000');
+    })
+
+    // $('.gnb .btn-menu').click(function(){
+    //     $('.btn-menu').toggleClass('btn-close')
+    //     $('.mgnb-area').toggleClass('active')
+    // })
 
 })
