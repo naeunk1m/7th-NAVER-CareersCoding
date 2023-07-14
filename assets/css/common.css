@@ -58,7 +58,13 @@ body.active {
 
 
 /* 이미지 */
-.header .group-menu .logo a {
+.header .group-menu .logo a, 
+.sc-search .group-search .search-area .ic-search::after, 
+.sc-search .group-teams .team-list .team-box .team-num::after,
+.btn-box .btn-arrow,
+.sc-board .board-box > a::after,
+.footer .footer-site .button::after,
+.header .util .link-util .ic-arrowdown {
     background: url(../images/sp_pc.png) no-repeat;
     background-size: 328px 205px;
 }

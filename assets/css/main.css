@@ -192,12 +192,13 @@
     margin-top: 70px;
 }
 
-.sc-search .group-teams .team-list > a {
+
+.sc-search .group-teams .team-list a {
     display: block;
     width: 100%;
 }
 
-.sc-search .group-teams .team-list > a:hover {
+.sc-search .group-teams .team-list a:hover {
     background-color: #ebebeb;
 }
 
