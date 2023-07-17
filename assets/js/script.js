@@ -4,9 +4,6 @@ $(function(){
         $('.link-util:last-child').toggleClass('open')
     })
 
-    // $('.sc-notice .btn-close').click(function () {
-    //     $('.sc-notice').hide();
-    // })
 
     $('.menu-item').hover(function(){
 
@@ -67,9 +64,5 @@ $(function(){
         $(this).css('color','#000');
     })
 
-    // $('.gnb .btn-menu').click(function(){
-    //     $('.btn-menu').toggleClass('btn-close')
-    //     $('.mgnb-area').toggleClass('active')
-    // })
 
 })

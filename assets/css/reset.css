@@ -1,9 +1,4 @@
-/* 리셋용도 */
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
+/* 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,7 +19,6 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -35,14 +29,7 @@ body {
 ol, ul {
 	list-style: none;
 }
-/* blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-} */
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -53,10 +40,7 @@ button {
 	border: none;
 }
 
-a{
-	text-decoration: none; 
-	color: inherit;
-}
+
 img{
 	vertical-align: top;
 	max-width: 100%;
@@ -74,6 +58,10 @@ input:focus {
 fieldset {
     margin: 0;
 }
+a{
+	text-decoration: none; 
+	color: inherit;
+}
 button {
     background: transparent;
     border: 0;
@@ -84,10 +72,18 @@ select {
     border: 0;
     outline: none;
     appearance: none;
-    -moz-appearance: none; /* Firefox */ 
-    -webkit-appearance: none; /* Safari and Chrome */
 }
-/* IE 기본 스타일 제거 */
-select::-ms-expand{
-	display: none; /* IE 10, 11 */
-}
+
+ */
+
+* { margin:0;padding:0;color:inherit; }
+*, :after, :before { box-sizing:border-box;flex-shrink:0; }
+:root { -webkit-tap-highlight-color:transparent;-webkit-text-size-adjust:100%;text-size-adjust:100%;cursor:default;line-height:1.5;overflow-wrap:break-word;-moz-tab-size:4;tab-size:4 }
+html, body { height:100%; line-height: 1;}
+img, picture, video, canvas, svg { display: block; max-width:100%; }
+button { background:none;border:0;cursor:pointer; }
+a { text-decoration:none }
+table { border-collapse:collapse;border-spacing:0 }
+ul { list-style: none;}
+fieldset{border: 0;}
+select {border: none; outline: none; appearance: none;}
