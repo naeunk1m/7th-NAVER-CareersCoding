@@ -122,9 +122,7 @@
     box-sizing: border-box;
 }
 
-.sc-search .select-box .select-option option[value=""][disabled] {
-    display: none;
-}
+
 
 .sc-search .select-box .select-option option {
     font-weight: normal;
