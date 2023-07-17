@@ -45,7 +45,16 @@
                     <a href="" class="link-util">Jobs</a>
                     <a href="" class="link-util">Login</a>
                     <a href="" class="link-util">FAQ</a>
-                    <a href="" class="link-util">KR
+                    <!-- 
+                    <div class="">
+                        <a href=""></a>
+                        <ul>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                        </ul>
+                    </div> -->
+
+                    <a href="" class="link-util" id="lagnList">KR
                         <i class="ic-arrowdown"></i>
                         <span class="link-language">EN</span>
                     </a>
@@ -65,7 +74,7 @@
                             <video class="spot_item" autoplay="" muted="" playsinline="" loop="">
                                 <source src="https://recruit.pstatic.net/cdn-vod/naver/Joker.mp4" type="video/mp4">
                             </video>
-                            <h3 class="video-txt">Board the Navership</h3>
+                            <h3 class="video-txt"><span>Board the Navership</span></h3>
                         </div>
                     </li>
                     <li class="swiper-slide">
@@ -73,7 +82,7 @@
                             <video class="spot_item" autoplay="" muted="" playsinline="" loop="">
                                 <source src="https://recruit.pstatic.net/cdn-vod/naver/Bram.mp4" type="video/mp4">
                             </video>
-                            <h3 class="video-txt">Navigate New Horizons</h3>
+                            <h3 class="video-txt"><span>Navigate New Horizons</span></h3>
                         </div>
                     </li>
                     <li class="swiper-slide">
@@ -82,7 +91,7 @@
                                 <source src="https://recruit.pstatic.net/cdn-vod/naver/Yann_Bastard.mp4"
                                     type="video/mp4">
                             </video>
-                            <h3 class="video-txt">Board the Navership</h3>
+                            <h3 class="video-txt"><span>Board the Navership</span></h3>
                         </div>
                     </li>
                 </ul>
@@ -106,7 +115,7 @@
                                 <label for="" class="ic-title">법인</label>
                                 <div class="select-option">
                                     <select name="" id="" class="select">
-                                        <option value="">법인 선택</option>
+                                        <option value="" disabled>법인 선택</option>
                                         <option value="NAVER">NAVER</option>
                                         <option value="NAVER Cloud">NAVER Cloud</option>
                                         <option value="WORKS MOBILE">WORKS MOBILE</option>
@@ -133,6 +142,68 @@
                             <button type="submit" class="btn-search">검색</button>
                         </fieldset>
                     </form>
+                </div>
+                <style>
+                    .search-area2 {
+                        display: none;
+                    }
+
+                    .chk-wrap {}
+
+                    .chk-wrap input {
+                        position: absolute;
+                        left: 10px;
+                    }
+
+                    .chk-wrap input:checked+label::before {
+                        background: #000;
+                    }
+
+                    .chk-wrap label {
+                        display: flex;
+                    }
+
+                    .chk-wrap label::before {
+                        content: '';
+                        width: 20px;
+                        height: 20px;
+                        border: 1px solid #000;
+                    }
+                </style>
+                <div class="search-area2">
+                    <button>search jobs</button>
+                    <div class="search-pop">
+                        <div class="chk-wrap">
+                            <input type="checkbox" id="tech">
+                            <label for="tech" class="title">전체</label>
+                        </div>
+                        <div class="chk-area" data-target="tech">
+                            <div class="chk-wrap">
+                                <input type="checkbox" id="soft1">
+                                <label for="soft1">프론트엔드</label>
+                            </div>
+                            <div class="chk-wrap">
+                                <input type="checkbox" id="soft2">
+                                <label for="soft2">프론트엔드</label>
+                            </div>
+                        </div>
+
+
+                        <div class="chk-wrap">
+                            <input type="checkbox" id="design">
+                            <label for="design">디자인전체</label>
+                        </div>
+                        <div class="chk-area" data-target="design">
+                            <div class="chk-wrap">
+                                <input type="checkbox" id="soft1">
+                                <label for="soft1">프론트엔드</label>
+                            </div>
+                            <div class="chk-wrap">
+                                <input type="checkbox" id="soft2">
+                                <label for="soft2">프론트엔드</label>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="title-area">
@@ -405,7 +476,7 @@
                                     <img src="./assets/images/img_02.png" alt="">
                                 </div>
                                 <div class="txt-box">
-                                    <strong class="txt-title"></strong>
+                                    <strong class="txt-title">dd</strong>
                                     <p class="txt-desc"></p>
                                 </div>
                             </a>
@@ -416,7 +487,7 @@
                                     <img src="./assets/images/img_03.png" alt="">
                                 </div>
                                 <div class="txt-box">
-                                    <strong class="txt-title"></strong>
+                                    <strong class="txt-title">dd</strong>
                                     <p class="txt-desc"></p>
                                 </div>
                             </a>

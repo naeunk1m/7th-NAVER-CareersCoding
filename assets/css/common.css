@@ -19,7 +19,6 @@ body.active {
 }
 
 .group-menu, .inner {
-    min-width: 1200px;
     margin: 0 auto;
     padding: 0 104px 0 98px;
 }
@@ -54,7 +53,9 @@ body.active {
 }
 
 /* 공부 */
-.btn-box .btn-arrow.swiper-button-disabled {}
+.btn-box .btn-arrow.swiper-button-disabled {
+    opacity: 0.5;
+}
 
 
 /* 이미지 */
@@ -69,3 +70,15 @@ body.active {
     background-size: 328px 205px;
 }
 /* 이미지 */
+
+
+
+@media (max-width:1229px) {
+    
+}
+@media (max-width:1024px) {
+    
+}
+@media (max-width:767px) {
+    
+}

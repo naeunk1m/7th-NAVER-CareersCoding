@@ -5,6 +5,7 @@
     width: 100%;
     height: 544px;
     object-fit: cover;
+    pointer-events: none;
 }
 .sc-main .video-box {
     position: relative;
@@ -23,11 +24,22 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    opacity: 0;
-    transition:opacity 1.2s 0.3s linear;
+    /* opacity: 0;
+    transition:opacity 1.2s 0.3s linear; */
 }
-.sc-main .swiper-slide-active .video-txt {
+
+.sc-main .video-txt span {
+    display: block;
+    /* background-color: #f00; */
+    width: 0%;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.sc-main .swiper-slide-active .video-txt span {
     opacity: 1;
+    width: 100%;
+    transition: opacity 0.8s 0.8s linear, width 0.3s 0.8s ease-out;
 }
 
 .sc-search {
@@ -103,6 +115,10 @@
 .sc-search .select-box .select-option {
     flex: 1;
     position: relative;
+}
+
+.sc-search .select-box .select-option option:disabled {
+    display: none;
 }
 .sc-search .select-box .select-option .select {
     position: relative;
@@ -266,7 +282,12 @@
 }
 
 .sc-people .con-list .img-box {
-    padding-bottom: 47.403%;
+    /* padding-bottom: 47.403%; */
+    
+
+    padding-bottom: calc((520/1097)*100%);
+
+
     position: relative;
 }
 .sc-people .con-list img {
@@ -349,4 +370,14 @@
     width: 32px;
     height: 32px;
     vertical-align: middle;
+}
+
+@media (max-width:1229px) {
+    
+}
+@media (max-width:1024px) {
+    
+}
+@media (max-width:767px) {
+    
 }
