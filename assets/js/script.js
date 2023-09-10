@@ -1,8 +1,9 @@
 $(function(){
-    // $('.link-util:last-child').click(function(e){
-    //     e.preventDefault();
-    //     $('.link-util:last-child').toggleClass('open')
-    // })
+
+    $('#langList').click(function(e){
+        e.preventDefault();
+        $('#langList').toggleClass('open')
+    })
 
 
     $('.menu-item').hover(function(){
@@ -51,13 +52,14 @@ $(function(){
           prevEl: ".prev",
         },
         breakpoints:{
-            769:{
-                // slidesPerView: 3,
-                // spaceBetween: 44,
+            768:{
+                slidesPerView: 2,
+            },
+            1025:{
+                slidesPerView: 3,
             }
           },
     });
-
     
     $('.sc-search select').change(function(e){
         e.preventDefault();
@@ -66,18 +68,19 @@ $(function(){
 
 
 
-    $('.chk-wrap .title').click(function(e){
-        target=$(this).attr('for')
+    $('.chk-wrap .title').click(function(){
+        target=$(this).attr('for');
+        console.log(target);
 
-        
-        if($(this).sibilings('input').prop('checked')) {
-            $(`[data-target="${target}"]`).find('input').prop('checked', fase)
-        } else {
 
-            $(`[data-target="${target}"]`).find('input').prop('checked', true)
+
+        if($(this).siblings('input').prop('checked')){
+            $(`[data-target="${target}"]`).find('input').prop('checked',false)
+        }else{
+            $(`[data-target="${target}"]`).find('input').prop('checked',true)
         }
-
     })
+
 
 
 })

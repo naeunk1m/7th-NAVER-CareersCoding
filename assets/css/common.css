@@ -73,12 +73,25 @@ body.active {
 
 
 
-@media (max-width:1229px) {
+
+@media (max-width:1229px) { 
+    .header .btn-menu,
+    .header .group-menu .logo a{
+        background-image: url(../images/sp_mo.png);
+        background-size: 195px 181px;
+    }
     
 }
 @media (max-width:1024px) {
+
+    .group-search, .team-box, .group-people, .group-benefits, .board-box{
+        padding: 0 50px;
+    }
     
 }
-@media (max-width:767px) {
+@media (max-width:767px) { 
     
+    .group-search, .team-box, .group-people, .group-benefits, .board-box{
+        padding: 0 22px;
+    }
 }

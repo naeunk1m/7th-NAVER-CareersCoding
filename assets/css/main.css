@@ -5,7 +5,9 @@
     width: 100%;
     height: 544px;
     object-fit: cover;
+    /*  */
     pointer-events: none;
+    /*  */
 }
 .sc-main .video-box {
     position: relative;
@@ -24,8 +26,6 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* opacity: 0;
-    transition:opacity 1.2s 0.3s linear; */
 }
 
 .sc-main .video-txt span {
@@ -283,7 +283,7 @@
 
 .sc-people .con-list .img-box {
     /* padding-bottom: 47.403%; */
-    
+    /* 높이/위드*100 = 비율유지 ㄱㄴ */
 
     padding-bottom: calc((520/1097)*100%);
 
@@ -372,12 +372,58 @@
     vertical-align: middle;
 }
 
-@media (max-width:1229px) {
+@media (max-width:1229px) { 
+
+    .sc-main .video-txt{
+        font-size: 80px;
+    }
     
 }
 @media (max-width:1024px) {
+
+    .sc-main .video-txt span{
+        font-size: 60px;
+    }
+
+
+    .sc-search .group-search{
+        padding: 126px 50px 0;
+    }
+    .sc-search .group-teams .team-list .team-box{
+        padding: 0 50px 0;
+    }
+
+    .sc-search .group-search .search-area{
+        display: none;
+    }
+
+    .sc-search .search-area2{
+        display: block
+    }
+    
     
 }
-@media (max-width:767px) {
+@media (max-width:767px) { 
+
+
+    .sc-main .video-box{
+        padding-bottom: calc((290/464)*100%);
+    }
+    .sc-main .video-box video{
+        position: absolute;
+        top: 0;left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .sc-main .video-txt span{
+        font-size: 40px;
+        width: 100%;
+    }
+    .sc-main .video-txt br{
+        display: block;
+    }
+ 
+
     
 }
