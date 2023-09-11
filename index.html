@@ -170,23 +170,652 @@
                         border: 1px solid #000;
                     }
                 </style>
+                <!-- 모바일검색영역 -->
                 <div class="search-area2">
                     <button>search jobs</button>
-                    <div class="search-pop">
-                        <div class="chk-wrap">
-                            <input type="checkbox" id="tech">
-                            <label for="tech" class="title">전체</label>
-                        </div>
-                        <div class="chk-area" data-target="tech">
-                            <div class="chk-wrap">
-                                <input type="checkbox" id="soft1">
-                                <label for="soft1">프론트엔드</label>
-                            </div>
-                            <div class="chk-wrap">
-                                <input type="checkbox" id="soft2">
-                                <label for="soft2">프론트엔드</label>
-                            </div>
-                        </div>
+                    <div class="group-job">
+                        <ul class="select-list">
+                            <p class="cate-title">직군/직무</p>
+                            <li class="select-item">
+                                <ul class="cate-list">
+                                    <button class="btn-tech">
+                                        <span>Tech</span>
+                                    </button>
+                                    <div class="chk-wrap">
+                                        <input type="checkbox" id="job-all">
+                                        <label for="job-all" class="title">전체</label>
+                                    </div>
+                                    <li class="cate-item">
+                                        <button class="btn-techtree">
+                                            <span>Software Development</span>
+                                        </button>
+                                        <div class="search-pop">
+                                            <div class="chk-area" data-target="job-all">
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="soft1">
+                                                    <label for="soft1">Fronted</label>
+                                                </div>
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="soft2">
+                                                    <label for="soft2">Android</label>
+                                                </div>
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="soft3">
+                                                    <label for="soft3">iOS</label>
+                                                </div>
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="soft4">
+                                                    <label for="soft4">Backend</label>
+                                                </div>
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="soft5">
+                                                    <label for="soft5">AI/ML</label>
+                                                </div>
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="soft6">
+                                                    <label for="soft6">Data Engineering</label>
+                                                </div>
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="soft7">
+                                                    <label for="soft7">Embedded SW</label>
+                                                </div>
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="soft8">
+                                                    <label for="soft8">Graphics</label>
+                                                </div>
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="soft9">
+                                                    <label for="soft9">공통</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="cate-item">
+                                        <button class="btn-techtree">
+                                            <span>Hardware Development</span>
+                                        </button>
+                                        <div class="search-pop">
+                                            <div class="chk-area" data-target="job-all">
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="hardware1">
+                                                    <label for="hardware1">Hardware</label>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="cate-item">
+                                        <button class="btn-techtree">
+                                            <span>Infra Engineering</span>
+                                        </button>
+                                        <div class="search-pop">
+                                            <div class="chk-area" data-target="job-all">
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="infra1">
+                                                    <label for="infra1">Infra Engineering</label>
+                                                </div>
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="infra2">
+                                                    <label for="infra2">Data Center Engineering</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="cate-item">
+                                        <button class="btn-techtree">
+                                            <span>Security</span>
+                                        </button>
+                                        <div class="search-pop">
+                                            <div class="chk-area" data-target="job-all">
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="sec1">
+                                                    <label for="sec1">Security</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="cate-item">
+                                        <button class="btn-techtree">
+                                            <span>Tech Operations</span>
+                                        </button>
+                                        <div class="search-pop">
+                                            <div class="chk-area" data-target="job-all">
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="techop1">
+                                                    <label for="techop1">Tech Staff</label>
+                                                </div>
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="techop2">
+                                                    <label for="techop2">QA</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="cate-item">
+                                        <button class="btn-techtree">
+                                            <span>공통</span>
+                                        </button>
+                                        <div class="search-pop">
+                                            <div class="chk-area" data-target="job-all">
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="common1">
+                                                    <label for="common1">공통</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="select-item">
+                                <ul class="cate-list">
+                                    <button class="btn-design">
+                                        <span>Design</span>
+                                    </button>
+                                    <div class="chk-wrap">
+                                        <input type="checkbox" id="design-all">
+                                        <label for="design-all" class="title">전체</label>
+                                    </div>
+                                    <li class="cate-item">
+                                        <button class="btn-designtree">
+                                            <span>Product Design</span>
+                                        </button>
+                                        <div class="search-pop">
+                                            <div class="chk-area" data-target="design-all">
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="prd">
+                                                    <label for="prd">Product Design</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="cate-item">
+                                        <button class="btn-designtree">
+                                            <span>Visual Comm. & Brand Design</span>
+                                        </button>
+                                        <div class="search-pop">
+                                            <div class="chk-area" data-target="design-all">
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="visual">
+                                                    <label for="visual">Visual Comm. & Brand Design</label>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="cate-item">
+                                        <button class="btn-designtree">
+                                            <span>Interactive Design</span>
+                                        </button>
+                                        <div class="search-pop">
+                                            <div class="chk-area" data-target="design-all">
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="infra1">
+                                                    <label for="infra1">Interactive Design</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="cate-item">
+                                        <button class="btn-designtree">
+                                            <span>Experience Insight & Planning</span>
+                                        </button>
+                                        <div class="search-pop">
+                                            <div class="chk-area" data-target="design-all">
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="exp">
+                                                    <label for="exp">Experience Insight & Planning</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="cate-item">
+                                        <button class="btn-designtree">
+                                            <span>Content Writing</span>
+                                        </button>
+                                        <div class="search-pop">
+                                            <div class="chk-area" data-target="design-all">
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="cont">
+                                                    <label for="cont">Content Writing</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="cate-item">
+                                        <button class="btn-designtree">
+                                            <span>공통</span>
+                                        </button>
+                                        <div class="search-pop">
+                                            <div class="chk-area" data-target="design-all">
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="common1">
+                                                    <label for="common1">공통</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="select-item">
+                                <ul class="cate-list">
+                                    <button class="btn-design">
+                                        <span>Service & Business</span>
+                                    </button>
+                                    <div class="chk-wrap">
+                                        <input type="checkbox" id="S&B-all">
+                                        <label for="S&B-all" class="title">전체</label>
+                                    </div>
+                                    <li class="cate-item">
+                                        <button class="btn-designtree">
+                                            <span>Product Development</span>
+                                        </button>
+                                        <div class="search-pop">
+                                            <div class="chk-area" data-target="S&B-all">
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="prd">
+                                                    <label for="prd">Product Development</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="cate-item">
+                                        <button class="btn-designtree">
+                                            <span>Content Development</span>
+                                        </button>
+                                        <div class="search-pop">
+                                            <div class="chk-area" data-target="S&B-all">
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="visual">
+                                                    <label for="visual">Content Development</label>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="cate-item">
+                                        <button class="btn-designtree">
+                                            <span>Business Development</span>
+                                        </button>
+                                        <div class="search-pop">
+                                            <div class="chk-area" data-target="S&B-all">
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="infra1">
+                                                    <label for="infra1">Business Development</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="cate-item">
+                                        <button class="btn-designtree">
+                                            <span>Trust&Safety</span>
+                                        </button>
+                                        <div class="search-pop">
+                                            <div class="chk-area" data-target="S&B-all">
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="exp">
+                                                    <label for="exp">Trust&Safety</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="cate-item">
+                                        <button class="btn-designtree">
+                                            <span>어카운트/세일즈</span>
+                                        </button>
+                                        <div class="search-pop">
+                                            <div class="chk-area" data-target="S&B-all">
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="cont">
+                                                    <label for="cont">어카운트/세일즈</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="cate-item">
+                                        <button class="btn-designtree">
+                                            <span>공통</span>
+                                        </button>
+                                        <div class="search-pop">
+                                            <div class="chk-area" data-target="S&B-all">
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="common1">
+                                                    <label for="common1">공통</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="select-item">
+                                <ul class="cate-list">
+                                    <button class="btn-design">
+                                        <span>Corporate</span>
+                                    </button>
+                                    <div class="chk-wrap">
+                                        <input type="checkbox" id="S&B-all">
+                                        <label for="S&B-all" class="title">전체</label>
+                                    </div>
+                                    <li class="cate-item">
+                                        <button class="btn-designtree">
+                                            <span>Marketing</span>
+                                        </button>
+                                        <div class="search-pop">
+                                            <div class="chk-area" data-target="S&B-all">
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="prd">
+                                                    <label for="prd">Marketing</label>
+                                                </div>
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="prd">
+                                                    <label for="prd">Brand Planning</label>
+                                                </div>
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="prd">
+                                                    <label for="prd">Content Creative</label>
+                                                </div>
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="prd">
+                                                    <label for="prd">User Research & Data Insight</label>
+                                                </div>
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="prd">
+                                                    <label for="prd">Marketing 공통</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="cate-item">
+                                        <button class="btn-designtree">
+                                            <span>Finance</span>
+                                        </button>
+                                        <div class="search-pop">
+                                            <div class="chk-area" data-target="S&B-all">
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="visual">
+                                                    <label for="visual">재무기획</label>
+                                                </div>
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="visual">
+                                                    <label for="visual">회계</label>
+                                                </div>
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="visual">
+                                                    <label for="visual">세무</label>
+                                                </div>
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="visual">
+                                                    <label for="visual">자금</label>
+                                                </div>
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="visual">
+                                                    <label for="visual">Finance 공통</label>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="cate-item">
+                                        <button class="btn-designtree">
+                                            <span>Service Infra</span>
+                                        </button>
+                                        <div class="search-pop">
+                                            <div class="chk-area" data-target="S&B-all">
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="infra1">
+                                                    <label for="infra1">소싱</label>
+                                                </div>
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="infra1">
+                                                    <label for="infra1">운영관리</label>
+                                                </div>
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="infra1">
+                                                    <label for="infra1">빌링</label>
+                                                </div>
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="infra1">
+                                                    <label for="infra1">구매</label>
+                                                </div>
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="infra1">
+                                                    <label for="infra1">부동산</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="cate-item">
+                                        <button class="btn-designtree">
+                                            <span>Partner Growth Support</span>
+                                        </button>
+                                        <div class="search-pop">
+                                            <div class="chk-area" data-target="S&B-all">
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="exp">
+                                                    <label for="exp">Partner Growth Support</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="cate-item">
+                                        <button class="btn-designtree">
+                                            <span>Corporate Development</span>
+                                        </button>
+                                        <div class="search-pop">
+                                            <div class="chk-area" data-target="S&B-all">
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="cont">
+                                                    <label for="cont">투자</label>
+                                                </div>
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="cont">
+                                                    <label for="cont">Investor Relations</label>
+                                                </div>
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="cont">
+                                                    <label for="cont">Corporate Strategy</label>
+                                                </div>
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="cont">
+                                                    <label for="cont">ESG</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="cate-item">
+                                        <button class="btn-designtree">
+                                            <span>Compliance</span>
+                                        </button>
+                                        <div class="search-pop">
+                                            <div class="chk-area" data-target="S&B-all">
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="cont">
+                                                    <label for="cont">Risk Management</label>
+                                                </div>
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="cont">
+                                                    <label for="cont">내부감사</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="cate-item">
+                                        <button class="btn-designtree">
+                                            <span>Legal</span>
+                                        </button>
+                                        <div class="search-pop">
+                                            <div class="chk-area" data-target="S&B-all">
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="cont">
+                                                    <label for="cont">법무</label>
+                                                </div>
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="cont">
+                                                    <label for="cont">지식재산</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="cate-item">
+                                        <button class="btn-designtree">
+                                            <span>Privacy</span>
+                                        </button>
+                                        <div class="search-pop">
+                                            <div class="chk-area" data-target="S&B-all">
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="cont">
+                                                    <label for="cont">개인정보보호</label>
+                                                </div>
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="cont">
+                                                    <label for="cont">통신비밀보호</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="cate-item">
+                                        <button class="btn-designtree">
+                                            <span>Communication</span>
+                                        </button>
+                                        <div class="search-pop">
+                                            <div class="chk-area" data-target="S&B-all">
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="cont">
+                                                    <label for="cont">trategic Communication</label>
+                                                </div>
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="cont">
+                                                    <label for="cont">산업및정책연구</label>
+                                                </div>
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="cont">
+                                                    <label for="cont">Corporate Experience</label>
+                                                </div>
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="cont">
+                                                    <label for="cont">Communication 공통</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="cate-item">
+                                        <button class="btn-designtree">
+                                            <span>HR</span>
+                                        </button>
+                                        <div class="search-pop">
+                                            <div class="chk-area" data-target="S&B-all">
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="cont">
+                                                    <label for="cont">Human Resources</label>
+                                                </div>
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="cont">
+                                                    <label for="cont">Employee Relations</label>
+                                                </div>
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="cont">
+                                                    <label for="cont">Talent Acquisition</label>
+                                                </div>
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="cont">
+                                                    <label for="cont">Culture Experience</label>
+                                                </div>
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="cont">
+                                                    <label for="cont">HR 공통</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="cate-item">
+                                        <button class="btn-designtree">
+                                            <span>Assist</span>
+                                        </button>
+                                        <div class="search-pop">
+                                            <div class="chk-area" data-target="S&B-all">
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="cont">
+                                                    <label for="cont">채용운영</label>
+                                                </div>
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="cont">
+                                                    <label for="cont">통번역</label>
+                                                </div>
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="cont">
+                                                    <label for="cont">비서</label>
+                                                </div>
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="cont">
+                                                    <label for="cont">기사</label>
+                                                </div>
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="cont">
+                                                    <label for="cont">Health Care</label>
+                                                </div>
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="cont">
+                                                    <label for="cont">운영지원</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="cate-item">
+                                        <button class="btn-designtree">
+                                            <span>Shared Service</span>
+                                        </button>
+                                        <div class="search-pop">
+                                            <div class="chk-area" data-target="S&B-all">
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="common1">
+                                                    <label for="common1">급여</label>
+                                                </div>
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="common1">
+                                                    <label for="common1">복리후생</label>
+                                                </div>
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="common1">
+                                                    <label for="common1">자산관리</label>
+                                                </div>
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="common1">
+                                                    <label for="common1">총무</label>
+                                                </div>
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="common1">
+                                                    <label for="common1">시설인프라</label>
+                                                </div>
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="common1">
+                                                    <label for="common1">공간운영</label>
+                                                </div>
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="common1">
+                                                    <label for="common1">시스템/안전</label>
+                                                </div>
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="common1">
+                                                    <label for="common1">재무지원</label>
+                                                </div>
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="common1">
+                                                    <label for="common1">구매</label>
+                                                </div>
+                                                <div class="chk-wrap">
+                                                    <input type="checkbox" id="common1">
+                                                    <label for="common1">건축</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <!-- 고용형태  -->
+
+                    </div>
+                    <!-- <div class="search-pop">
+
 
 
                         <div class="chk-wrap">
@@ -203,7 +832,7 @@
                                 <label for="soft2">프론트엔드</label>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
 
                 <div class="title-area">
